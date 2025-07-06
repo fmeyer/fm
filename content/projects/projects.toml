@@ -1,0 +1,27 @@
+[[collection]]
+type = "card"
+title = "lbk"
+link = "https://github.com/fmeyer/lbk"
+content = "A local first very opinionated way of managing logbooks, notes, and daily entries with support for multiple storage backends, advanced date referencing, and S3 backup support."
+tags = ["golang", "notetaking", "logbook"]
+
+[[collection]]
+type = "card"
+title = "tldw"
+link = "https://github.com/fmeyer/tldw"
+content = "Summarize YouTube videos using OpenAI's ChatGPT with intelligent two-phase processing for high-quality, structured summaries."
+tags = ["rust", "youtube", "openai", "ai"]
+
+[[collection]]
+type = "card"
+title = "mortimer"
+link = "https://github.com/fmeyer/mortimer"
+content = "Mortimer is a command-line utility designed for enhanced shell history management. It allows for logging, searching, and importing of shell commands with special handling for sensitive information. With Mortimer, you can easily redact sensitive data from your history, perform fuzzy searches, and import history from Zsh."
+tags = ["rust", "shell", "history", "cli"]
+
+[[collection]]
+type = "card"
+title = "screenshoter"
+link = "https://github.com/fmeyer/screenshotter"
+content = "A robust, high-performance Rust tool for extracting unique frames from video sequences using Mean Squared Error (MSE) analysis with comprehensive error handling and parallel processing."
+tags = ["rust", "video", "image-processing", "cli"]
