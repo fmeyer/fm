@@ -6,19 +6,40 @@ vars:
   PREVIEW_URL: https://fm-ek0.pages.dev
 
 tasks:
+  tikz:
+    desc: Pre-render .tex files under content/ to SVG
+    cmds:
+      - |
+        find content -name '*.tex' | while read -r tex; do
+          svg="${tex%.tex}.svg"
+          if [ "$svg" -nt "$tex" ]; then
+            echo "skip: $svg is up to date"
+            continue
+          fi
+          dir=$(dirname "$tex")
+          base=$(basename "$tex" .tex)
+          echo "render: $tex -> $svg"
+          pdflatex -interaction=nonstopmode -output-directory="$dir" "$tex" > /dev/null 2>&1
+          dvisvgm --pdf "$dir/$base.pdf" -o "$svg" --no-fonts > /dev/null 2>&1
+          rm -f "$dir/$base."{aux,log,pdf}
+        done
+
   serve:
     desc: Start local dev server
+    deps: [tikz]
     cmds:
       - zola serve
 
   build:
     desc: Build site for production
+    deps: [tikz]
     cmds:
       - sed -i '' 's|^base_url = .*|base_url = "{{.PROD_URL}}"|' config.toml
       - zola build
 
   build:preview:
     desc: Build site for Cloudflare Pages preview
+    deps: [tikz]
     cmds:
       - sed -i '' 's|^base_url = .*|base_url = "{{.PREVIEW_URL}}"|' config.toml
       - zola build
