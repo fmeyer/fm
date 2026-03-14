@@ -31,15 +31,13 @@ tasks:
     desc: Build site for production
     deps: [tikz]
     cmds:
-      - sed -i '' 's|^base_url = .*|base_url = "{{.PROD_URL}}"|' config.toml
-      - zola build
+      - zola build --base-url {{.PROD_URL}}
 
   build:preview:
     desc: Build site for Cloudflare Pages preview
     deps: [tikz]
     cmds:
-      - sed -i '' 's|^base_url = .*|base_url = "{{.PREVIEW_URL}}"|' config.toml
-      - zola build
+      - zola build --base-url {{.PREVIEW_URL}}
 
   deploy:
     desc: Build and deploy to production (fernandomeyer.com)
