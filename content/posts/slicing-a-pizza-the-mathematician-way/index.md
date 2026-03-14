@@ -7,7 +7,6 @@ tags = ["math", "geometry"]
 categories = ["mathematics"]
 [extra]
 math = true
-tikz = true
 toc = true
 +++
 
@@ -68,16 +67,7 @@ approach which the book suggests, you draw two concentric circles and shade the
 area between then. I used to hate this, but nowadays I see it correlates a lot
 with programming.
 
-{% tikz() %}
-\begin{document}
-  \begin{tikzpicture}
-    \foreach \i in {1,...,7} {
-      \draw (0,0) circle (\i*0.5cm);
-    }
-    \fill (0,0) circle (0.03cm);
-  \end{tikzpicture}
-\end{document}
-{% end %}
+![8 rings with proportional radii](pizza_naive.svg)
 
 Now with the second part, and as you may have guessed at this point, it can be
 used to solve the proposed question above. There's one catch, as when it says
@@ -170,17 +160,7 @@ final result of the disk partitioning until now to avoid spoiling out the
 surprise. Take a look as the outer ring thickness seems to shrink as the radius
 increases. Odd but correct.
 
-{% tikz() %}
-\begin{document}
-  \begin{tikzpicture}
-    \foreach \i in {1,...,8} {
-      \pgfmathsetmacro{\r}{3.5*sqrt(\i/8)}
-      \draw (0,0) circle (\r cm);
-    }
-    \fill (0,0) circle (0.03cm);
-  \end{tikzpicture}
-\end{document}
-{% end %}
+![8 equal-area rings](pizza8_equal.svg)
 
 We already wrote a simple proof above that shows all the rings have the same
 area, which means the same amount the pizza. However, as we increase the
@@ -194,17 +174,7 @@ size in a radius 10 disk with 8 rings.
 rings area: [39.26990817 39.26990817 39.26990817 ... ]
 ```
 
-{% tikz() %}
-\begin{document}
-  \begin{tikzpicture}
-    \foreach \i in {1,...,50} {
-      \pgfmathsetmacro{\r}{3.5*sqrt(\i/50)}
-      \draw (0,0) circle (\r cm);
-    }
-    \fill (0,0) circle (0.03cm);
-  \end{tikzpicture}
-\end{document}
-{% end %}
+![50 equal-area rings](pizza50_equal.svg)
 
 ## Can we use this to something else?
 
