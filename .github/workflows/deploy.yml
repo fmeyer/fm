@@ -19,8 +19,13 @@ jobs:
           curl -sL https://github.com/getzola/zola/releases/download/v0.22.1/zola-v0.22.1-x86_64-unknown-linux-gnu.tar.gz | tar xz
           sudo mv zola /usr/local/bin/
 
+      - name: Install Task
+        uses: arduino/setup-task@v2
+        with:
+          version: 3.x
+
       - name: Build
-        run: zola build
+        run: task build
 
       - name: Deploy to Cloudflare Pages
         uses: cloudflare/wrangler-action@v3
