@@ -1,0 +1,10 @@
+\documentclass[border=2pt]{standalone}
+\usepackage{tikz}
+\begin{document}
+\begin{tikzpicture}
+  \foreach \i in {1,...,7} {
+    \draw (0,0) circle (\i*0.5cm);
+  }
+  \fill (0,0) circle (0.03cm);
+\end{tikzpicture}
+\end{document}
