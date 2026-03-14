@@ -1,9 +1,9 @@
 [[collection]]
 type = "card"
-title = "lbk"
-link = "https://github.com/fmeyer/lbk"
-content = "A local first very opinionated way of managing logbooks, notes, and daily entries with support for multiple storage backends, advanced date referencing, and S3 backup support."
-tags = ["golang", "notetaking", "logbook"]
+title = "walden"
+link = "https://github.com/fmeyer/logbook"
+content = "Personal logbook CLI for managing daily notes, tasks, and reminders with natural time references, full-text search, optional Age encryption, and an interactive TUI for outlining."
+tags = ["rust", "notetaking", "logbook", "cli"]
 
 [[collection]]
 type = "card"
