@@ -1,6 +1,7 @@
 +++
 title = "Math and Diagrams Demo"
 date = 2025-01-15
+draft = true
 [extra]
 toc = true
 math = true
