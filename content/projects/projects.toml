@@ -14,10 +14,10 @@ tags = ["rust", "youtube", "openai", "ai"]
 
 [[collection]]
 type = "card"
-title = "mortimer"
-link = "https://github.com/fmeyer/mortimer"
-content = "Mortimer is a command-line utility designed for enhanced shell history management. It allows for logging, searching, and importing of shell commands with special handling for sensitive information. With Mortimer, you can easily redact sensitive data from your history, perform fuzzy searches, and import history from Zsh."
-tags = ["rust", "shell", "history", "cli"]
+title = "zam"
+link = "https://github.com/fmeyer/zam"
+content = "Enhanced shell history manager with automatic sensitive data redaction, fuzzy search, multi-shell import (zsh/bash/fish), interactive TUI browser, and cross-machine database merging."
+tags = ["rust", "shell", "history", "cli", "security"]
 
 [[collection]]
 type = "card"
