@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+ "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+ <svg width="200pt" height="200pt"  viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <g transform="translate(100, 100)" >
+        <circle cx="0" cy="0" r="0.0" stroke-width="1" style="stroke:#000; fill:transparent"/> <circle cx="0" cy="0" r="35.35533905932738" stroke-width="1" style="stroke:#000; fill:transparent"/> <circle cx="0" cy="0" r="50.0" stroke-width="1" style="stroke:#000; fill:transparent"/> <circle cx="0" cy="0" r="61.23724356957945" stroke-width="1" style="stroke:#000; fill:transparent"/> <circle cx="0" cy="0" r="70.71067811865476" stroke-width="1" style="stroke:#000; fill:transparent"/> <circle cx="0" cy="0" r="79.05694150420949" stroke-width="1" style="stroke:#000; fill:transparent"/> <circle cx="0" cy="0" r="86.60254037844386" stroke-width="1" style="stroke:#000; fill:transparent"/> <circle cx="0" cy="0" r="93.54143466934853" stroke-width="1" style="stroke:#000; fill:transparent"/> <circle cx="0" cy="0" r="100.0" stroke-width="1" style="stroke:#000; fill:transparent"/>
+    </g>
+</svg>
