@@ -9,17 +9,17 @@ tasks:
   tikz:
     desc: Pre-render .tex files under content/ to SVG
     cmds:
-      - lua scripts/tikz.lua
+      - lua tasks/tikz.lua
 
   post:
     desc: Create a new post
     cmds:
-      - lua scripts/post.lua {{.CLI_ARGS}}
+      - lua tasks/post.lua {{.CLI_ARGS}}
 
   post:tex:
     desc: Add a .tex diagram to a post
     cmds:
-      - lua scripts/post_tex.lua {{.CLI_ARGS}}
+      - lua tasks/post_tex.lua {{.CLI_ARGS}}
 
   serve:
     desc: Start local dev server
