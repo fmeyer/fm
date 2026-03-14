@@ -1,17 +1,15 @@
 +++
-title = "serene::posts"
-description = "Demo posts page for zola-theme-serene"
+title = "Posts"
+description = "Blog posts"
 sort_by = "date"
 template = "blog.html"
 page_template = "post.html"
 insert_anchor_links = "right"
-generate_feeds = true
 
 [extra]
 lang = "en"
 
 title = "Posts"
-subtitle = "Example posts showcasing the features of this theme"
 
 categorized = false
 back_to_top = true
