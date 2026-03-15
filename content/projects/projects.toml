@@ -1,8 +1,9 @@
 [[collection]]
-type = "card"
+type = "art"
 title = "walden"
 link = "https://github.com/fmeyer/logbook"
 content = "Personal logbook CLI for managing daily notes, tasks, and reminders with natural time references, full-text search, optional Age encryption, and an interactive TUI for outlining."
+img = "/img/projects/walden-demo.png"
 tags = ["rust", "notetaking", "logbook", "cli"]
 
 [[collection]]
