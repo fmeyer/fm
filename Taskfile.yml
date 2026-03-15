@@ -6,18 +6,41 @@ vars:
   PREVIEW_URL: https://fm-ek0.pages.dev
 
 tasks:
+  tikz:
+    desc: Pre-render .tex files under content/ to SVG
+    cmds:
+      - lua tasks/tikz.lua
+
+  images:
+    desc: Optimize images from assets/ into static/
+    cmds:
+      - lua tasks/images.lua
+
+  post:
+    desc: Create a new post
+    cmds:
+      - lua tasks/post.lua {{.CLI_ARGS}}
+
+  post:tex:
+    desc: Add a .tex diagram to a post
+    cmds:
+      - lua tasks/post_tex.lua {{.CLI_ARGS}}
+
   serve:
     desc: Start local dev server
+    deps: [tikz, images]
     cmds:
       - zola serve
 
   build:
     desc: Build site for production
+    deps: [tikz, images]
     cmds:
       - zola build --base-url {{.PROD_URL}}
 
   build:preview:
     desc: Build site for Cloudflare Pages preview
+    deps: [tikz, images]
     cmds:
       - zola build --base-url {{.PREVIEW_URL}}
 

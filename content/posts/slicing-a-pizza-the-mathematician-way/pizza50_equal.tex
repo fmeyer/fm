@@ -1,0 +1,11 @@
+\documentclass[border=2pt]{standalone}
+\usepackage{tikz}
+\begin{document}
+\begin{tikzpicture}
+  \foreach \i in {1,...,50} {
+    \pgfmathsetmacro{\r}{3.5*sqrt(\i/50)}
+    \draw (0,0) circle (\r cm);
+  }
+  \fill (0,0) circle (0.03cm);
+\end{tikzpicture}
+\end{document}

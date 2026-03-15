@@ -1,9 +1,10 @@
 [[collection]]
-type = "card"
-title = "lbk"
-link = "https://github.com/fmeyer/lbk"
-content = "A local first very opinionated way of managing logbooks, notes, and daily entries with support for multiple storage backends, advanced date referencing, and S3 backup support."
-tags = ["golang", "notetaking", "logbook"]
+type = "art"
+title = "walden"
+link = "https://github.com/fmeyer/logbook"
+content = "Personal logbook CLI for managing daily notes, tasks, and reminders with natural time references, full-text search, optional Age encryption, and an interactive TUI for outlining."
+img = "/img/projects/walden-demo.png"
+tags = ["rust", "notetaking", "logbook", "cli"]
 
 [[collection]]
 type = "card"
@@ -14,10 +15,10 @@ tags = ["rust", "youtube", "openai", "ai"]
 
 [[collection]]
 type = "card"
-title = "mortimer"
-link = "https://github.com/fmeyer/mortimer"
-content = "Mortimer is a command-line utility designed for enhanced shell history management. It allows for logging, searching, and importing of shell commands with special handling for sensitive information. With Mortimer, you can easily redact sensitive data from your history, perform fuzzy searches, and import history from Zsh."
-tags = ["rust", "shell", "history", "cli"]
+title = "zam"
+link = "https://github.com/fmeyer/zam"
+content = "Enhanced shell history manager with automatic sensitive data redaction, fuzzy search, multi-shell import (zsh/bash/fish), interactive TUI browser, and cross-machine database merging."
+tags = ["rust", "shell", "history", "cli", "security"]
 
 [[collection]]
 type = "card"
