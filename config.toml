@@ -5,9 +5,9 @@ default_language = "en"
 theme = "serene"
 output_dir = "public"
 compile_sass = true
-minify_html = false # Keep this false, as it may cause issues with some styles
-build_search_index = false # Keep this false, search is temporarily unsupported
-generate_feeds = false # Whether to generate a feed file in root, read docs for more info about rss feed
+minify_html = true
+build_search_index = true
+generate_feeds = true
 feed_filenames = ["feed.xml"] # "feed.xml" | "atom.xml" | "rss.xml", read docs for more info
 taxonomies = [{ name = "tags" }, { name = "categories" }]
 
@@ -35,6 +35,7 @@ anchors = "on"
 sections = [
     { name = "posts", path = "/posts", is_external = false },
     { name = "projects", path = "/projects", is_external = false },
+    { name = "about", path = "/about", is_external = false },
 ]
 blog_section_path = "/posts"
 

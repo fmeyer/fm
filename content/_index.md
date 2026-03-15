@@ -6,7 +6,7 @@ lang = 'en'
 
 name = "Fernando Meyer"
 id = "fmeyer"
-bio = "Depends on who you ask: engineer, hacker, mathematician, musician, F1 journalist"
+bio = "Principal Software Engineer, Berlin. Distributed datastores, platform infrastructure, and the systems underneath the systems."
 avatar = "img/fernando_meyer.webp"
 links = [
     { name = "GitHub", icon = "github", url = "https://github.com/fmeyer" },
@@ -24,4 +24,4 @@ date_format = "%b %-d, %Y"
 
 Hello there 👋
 
-This website is my space to reclaim my digital presence and let my creativity run wild, don't count on regular updates. By trade, I'm a software engineer focused on platforms and datastores, currently an MSc. CS student and slowly catching up with my math undergrad at one credit per Olympics :snail:. I also dive into electronics, hacking, tinkering, game development, and music production.
+Writing about database internals, distributed systems, and keeping stateful infrastructure alive in production. Occasionally about engineering leadership and the math hiding inside everyday things. [More about me](/about).
