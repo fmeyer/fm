@@ -38,6 +38,11 @@ tasks:
     cmds:
       - zola build --base-url {{.PROD_URL}}
 
+  build:ci:
+    desc: Build site for CI (no tikz/images, pre-rendered assets must be committed)
+    cmds:
+      - zola build --base-url {{.PROD_URL}}
+
   build:preview:
     desc: Build site for Cloudflare Pages preview
     deps: [tikz, images]
