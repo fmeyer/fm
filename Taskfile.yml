@@ -11,6 +11,11 @@ tasks:
     cmds:
       - lua tasks/tikz.lua
 
+  images:
+    desc: Optimize images from assets/ into static/
+    cmds:
+      - lua tasks/images.lua
+
   post:
     desc: Create a new post
     cmds:
@@ -23,19 +28,19 @@ tasks:
 
   serve:
     desc: Start local dev server
-    deps: [tikz]
+    deps: [tikz, images]
     cmds:
       - zola serve
 
   build:
     desc: Build site for production
-    deps: [tikz]
+    deps: [tikz, images]
     cmds:
       - zola build --base-url {{.PROD_URL}}
 
   build:preview:
     desc: Build site for Cloudflare Pages preview
-    deps: [tikz]
+    deps: [tikz, images]
     cmds:
       - zola build --base-url {{.PREVIEW_URL}}
 
